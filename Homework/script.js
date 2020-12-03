@@ -16,6 +16,15 @@ function generatePassword (){
   }
 }
 
+//asking the user if they want certian characters in there password 
+const confirmUpperC = confirm("Click ok of if you want upper letter cases");
+const confirmLowerC = confirm ("Click ok if you want lower letter cases");
+const confirmNumberC = confirm("Click ok if you want numbers");
+const confirmSpecialC = confirm("Click ok if you want special cases");
+
+//making a loop to double check the parameters
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
