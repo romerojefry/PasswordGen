@@ -5,6 +5,17 @@ const LowerC = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
 const NumberC = [1,2,3,4,5,6,7,8,9];
 const SpecialC = ["~","!","@","#","$","%","^","&","*","(",")","_","+"];
 
+function generatePassword (){
+  const confirmLength = propmt("How long do you want your password to be and must be between 8-128 characters?")
+
+  confirmLength = parseInt(confirmLength);
+
+//created a locigal operator to check the length
+  if(confirmLength < 8 || confirmLength > 128 || isNaN( confirmLength)) {
+    return alert("Must be between 8-128 characters!");
+  }
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
