@@ -22,7 +22,10 @@ const confirmLowerC = confirm ("Click ok if you want lower letter cases");
 const confirmNumberC = confirm("Click ok if you want numbers");
 const confirmSpecialC = confirm("Click ok if you want special cases");
 
-//making a loop to double check the parameters
+//making a loop to double check if the user valid at least one parameters
+if(confirmUpperC === false && confirmLowerC === false && confirmNumberC === false && confirmSpecialC === false) {
+  return alert("choose a parameter");
+}
 
 
 // Assignment Code
