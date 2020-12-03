@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "PasswordGen",
+			"path": "../PasswordGen"
+		},
+		{
+			"name": "Homework",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
