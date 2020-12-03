@@ -27,6 +27,40 @@ if(confirmUpperC === false && confirmLowerC === false && confirmNumberC === fals
   return alert("choose a parameter");
 }
 
+const userInput = [];
+const confirmIn = [];
+
+if(confirmUpperC){
+  userInput = userInput.concat(UpperC);
+
+  const randomUpper = Math.floor(math.random() * UpperC.length);
+
+  confirmIn += UpperC[randomUpper];
+}
+
+if(confirmLowerC){
+  userInput = userInput.concat(LowerC);
+
+  const randomLower = Math.floor(math.random() * LowerC.length);
+
+  confirmIn += LowerC[randomLower];
+}
+
+if(confirmNumberC){
+  userInput = userInput.concat(NumberC);
+
+  const randomNumber = Math.floor(math.random() * NumberC.length);
+
+  confirmIn += NumberC[randomNumber];
+}
+
+if(confirmSpecialC){
+  userInput = userInput.concat(SpecialC);
+
+  const randomSpecial = Math.floor(math.random() * SpecialC.length);
+
+  confirmIn += SpecialC[randomSpecial];
+}
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
